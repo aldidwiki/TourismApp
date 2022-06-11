@@ -11,11 +11,14 @@ import Kingfisher
 class ViewController: UIViewController {
     
     @IBOutlet weak var tourismTableView: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     private var placesData:[Places] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        showLoading()
         
         tourismTableView.dataSource = self
         tourismTableView.delegate = self
@@ -27,11 +30,22 @@ class ViewController: UIViewController {
         Api().getPlaces { tourism in
             self.placesData = tourism.places
             self.tourismTableView.reloadData()
+            self.hideLoading()
         }
     }
     
     @IBAction func goToProfile(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "moveToProfile", sender: nil)
+    }
+    
+    private func showLoading() {
+        loadingIndicator.startAnimating()
+        loadingIndicator.isHidden = false
+    }
+    
+    private func hideLoading() {
+        loadingIndicator.stopAnimating()
+        loadingIndicator.isHidden = true
     }
 }
 

@@ -20,6 +20,9 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="XC5-YR-7UO">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -27,7 +30,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3hN-qO-FJ5" secondAttribute="trailing" id="7cL-w6-PWl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3hN-qO-FJ5" secondAttribute="bottom" id="BT7-Dt-qC2"/>
                             <constraint firstItem="3hN-qO-FJ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bo8-6w-RFV"/>
+                            <constraint firstItem="XC5-YR-7UO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZKa-li-I1M"/>
                             <constraint firstItem="3hN-qO-FJ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eFt-Yy-TRR"/>
+                            <constraint firstItem="XC5-YR-7UO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXH-Ez-jjA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tourism App" id="Fw7-jC-StO">
@@ -39,6 +44,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="loadingIndicator" destination="XC5-YR-7UO" id="VfW-cf-hjn"/>
                         <outlet property="tourismTableView" destination="3hN-qO-FJ5" id="oGG-iA-fkK"/>
                         <segue destination="oAc-Bd-P2A" kind="show" identifier="moveToDetail" id="Vqz-wH-5za"/>
                         <segue destination="9dU-VJ-MLk" kind="show" identifier="moveToProfile" id="Id5-bE-Naw"/>
