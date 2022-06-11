@@ -29,6 +29,10 @@ class ViewController: UIViewController {
             self.tourismTableView.reloadData()
         }
     }
+    
+    @IBAction func goToProfile(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "moveToProfile", sender: nil)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
