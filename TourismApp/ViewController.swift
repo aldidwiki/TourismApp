@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tourismTableView.dataSource = self
-        self.tourismTableView.register(
+        tourismTableView.dataSource = self
+        tourismTableView.delegate = self
+        tourismTableView.register(
             UINib(nibName: "TourismTableViewCell", bundle: nil),
             forCellReuseIdentifier: "TourismCell"
         )
@@ -45,6 +46,20 @@ extension ViewController: UITableViewDataSource {
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveToDetail", sender: placesData[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            if let detailViewController = segue.destination as? DetailViewController {
+                detailViewController.placeData = sender as? Places
+            }
         }
     }
 }

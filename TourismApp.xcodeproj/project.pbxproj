@@ -17,6 +17,7 @@
 		CE07CFAF285447C5007ECB26 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE07CFAE285447C5007ECB26 /* Kingfisher */; };
 		CE07CFB228544B01007ECB26 /* TourismTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07CFB028544B00007ECB26 /* TourismTableViewCell.swift */; };
 		CE07CFB328544B01007ECB26 /* TourismTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE07CFB128544B00007ECB26 /* TourismTableViewCell.xib */; };
+		CE07CFB5285452DA007ECB26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07CFB4285452DA007ECB26 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CE07CFAB28543F57007ECB26 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CE07CFB028544B00007ECB26 /* TourismTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismTableViewCell.swift; sourceTree = "<group>"; };
 		CE07CFB128544B00007ECB26 /* TourismTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismTableViewCell.xib; sourceTree = "<group>"; };
+		CE07CFB4285452DA007ECB26 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				CE07CFAB28543F57007ECB26 /* Data.swift */,
 				CE07CFB028544B00007ECB26 /* TourismTableViewCell.swift */,
 				CE07CFB128544B00007ECB26 /* TourismTableViewCell.xib */,
+				CE07CFB4285452DA007ECB26 /* DetailViewController.swift */,
 			);
 			path = TourismApp;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				CE07CF9C28543F04007ECB26 /* ViewController.swift in Sources */,
 				CE07CFB228544B01007ECB26 /* TourismTableViewCell.swift in Sources */,
 				CE07CF9828543F04007ECB26 /* AppDelegate.swift in Sources */,
+				CE07CFB5285452DA007ECB26 /* DetailViewController.swift in Sources */,
 				CE07CF9A28543F04007ECB26 /* SceneDelegate.swift in Sources */,
 				CE07CFAC28543F57007ECB26 /* Data.swift in Sources */,
 			);

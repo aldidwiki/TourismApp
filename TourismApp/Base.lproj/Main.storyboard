@@ -32,11 +32,65 @@
                     </view>
                     <connections>
                         <outlet property="tourismTableView" destination="3hN-qO-FJ5" id="oGG-iA-fkK"/>
+                        <segue destination="oAc-Bd-P2A" kind="show" identifier="moveToDetail" id="Vqz-wH-5za"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="80"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="aIK-uD-2MK">
+            <objects>
+                <viewController id="oAc-Bd-P2A" customClass="DetailViewController" customModule="TourismApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KVk-fZ-jZs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ytv-Hs-rcY">
+                                <rect key="frame" x="107" y="68" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="USu-05-uEW"/>
+                                    <constraint firstAttribute="width" constant="200" id="yC5-y5-4VN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYH-KA-R5Y">
+                                <rect key="frame" x="12" y="280" width="390" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-ZA-qUX">
+                                <rect key="frame" x="12" y="317.5" width="390" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9fV-tR-vIu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9fV-tR-vIu" firstAttribute="trailing" secondItem="9iY-ZA-qUX" secondAttribute="trailing" constant="12" id="4YL-lT-Rr5"/>
+                            <constraint firstItem="9fV-tR-vIu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9iY-ZA-qUX" secondAttribute="bottom" constant="12" id="ICw-Vt-ptG"/>
+                            <constraint firstItem="9fV-tR-vIu" firstAttribute="trailing" secondItem="tYH-KA-R5Y" secondAttribute="trailing" constant="12" id="ONX-Jy-sBd"/>
+                            <constraint firstItem="ytv-Hs-rcY" firstAttribute="centerX" secondItem="KVk-fZ-jZs" secondAttribute="centerX" id="OyX-JH-xQU"/>
+                            <constraint firstItem="9iY-ZA-qUX" firstAttribute="top" secondItem="tYH-KA-R5Y" secondAttribute="bottom" constant="12" id="Vpt-za-ezz"/>
+                            <constraint firstItem="tYH-KA-R5Y" firstAttribute="top" secondItem="ytv-Hs-rcY" secondAttribute="bottom" constant="12" id="aZM-zL-sEa"/>
+                            <constraint firstItem="tYH-KA-R5Y" firstAttribute="leading" secondItem="9fV-tR-vIu" secondAttribute="leading" constant="12" id="cas-Qj-Nq6"/>
+                            <constraint firstItem="9iY-ZA-qUX" firstAttribute="leading" secondItem="9fV-tR-vIu" secondAttribute="leading" constant="12" id="hTM-qw-MW7"/>
+                            <constraint firstItem="ytv-Hs-rcY" firstAttribute="top" secondItem="9fV-tR-vIu" secondAttribute="top" constant="24" id="x7R-0m-Y63"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xno-mo-xOh"/>
+                    <connections>
+                        <outlet property="descLabel" destination="9iY-ZA-qUX" id="q8x-QE-9D1"/>
+                        <outlet property="nameLabel" destination="tYH-KA-R5Y" id="1wc-eZ-zcy"/>
+                        <outlet property="tourismImage" destination="ytv-Hs-rcY" id="lvc-Xg-go1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AN-Lk-QH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="80"/>
         </scene>
     </scenes>
     <resources>
