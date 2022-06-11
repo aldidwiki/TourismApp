@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="79.6875"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="aIK-uD-2MK">
             <objects>
                 <viewController id="oAc-Bd-P2A" customClass="DetailViewController" customModule="TourismApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                             <constraint firstItem="ytv-Hs-rcY" firstAttribute="top" secondItem="9fV-tR-vIu" secondAttribute="top" constant="24" id="x7R-0m-Y63"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xno-mo-xOh"/>
+                    <navigationItem key="navigationItem" title="Detail" id="xno-mo-xOh"/>
                     <connections>
                         <outlet property="descLabel" destination="9iY-ZA-qUX" id="q8x-QE-9D1"/>
                         <outlet property="nameLabel" destination="tYH-KA-R5Y" id="1wc-eZ-zcy"/>
@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="1979.7101449275365" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="seF-gl-egH">
             <objects>
                 <viewController id="9dU-VJ-MLk" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                             <constraint firstItem="ERd-wC-bjG" firstAttribute="centerX" secondItem="9p0-8i-HPm" secondAttribute="centerX" id="pVo-xM-X0L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="83E-w0-cuM"/>
+                    <navigationItem key="navigationItem" title="Profile" id="83E-w0-cuM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uY8-aU-Q99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
